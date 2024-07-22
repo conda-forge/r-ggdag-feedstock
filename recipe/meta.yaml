@@ -1,4 +1,4 @@
-{% set version = "0.2.12" %}
+{% set version = "0.2.13" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,7 +10,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/ggdag_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/ggdag/ggdag_{{ version }}.tar.gz
-  sha256: 9d5621290eb234e9c5c2e8cb357e1e5267a00a9549b6c45ae7e760989de2b160
+  sha256: ae9dc0057dc4aa3a16f4cb25e83cb8f9383e26b94ede6bcf31bdfeb7034f961c
 
 build:
   merge_build_host: true  # [win]
